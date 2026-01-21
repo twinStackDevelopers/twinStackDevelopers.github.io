@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Twinstack Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span class="logo-highlight">Twin</span>stackDevs
+            </a>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="chat-btn active">Start a Project</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get in Touch</h1>
+                <p>Let's discuss your project and build something amazing together</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="detailed-services">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="service-detail">
+                    <div class="service-icon-large">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                        
+                        <form id="contactForm">
+                            <!-- EmailJS will use these fields -->
+                            <input type="hidden" name="to_email" value="twinstackdevelopers@gmail.com">
+                            
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="from_name" placeholder="Your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="from_email" placeholder="you@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+260 973018429">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Your company name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="Website Development">Website Development</option>
+                                    <option value="Mobile App Development">Mobile App Development</option>
+                                    <option value="E-commerce Solutions">E-commerce Solutions</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Web Application">Web Application</option>
+                                    <option value="Maintenance & Support">Maintenance & Support</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="$1,000 - $3,000">$1,000 - $3,000</option>
+                                    <option value="$3,000 - $5,000">$3,000 - $5,000</option>
+                                    <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                                    <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                                    <option value="$20,000+">$20,000+</option>
+                                    <option value="Not sure yet">Not sure yet</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="projectDetails">Project Details *</label>
+                                <textarea id="projectDetails" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            
+                            <div class="form-notice">
+                                <i class="fas fa-lock"></i>
+                                <p>Your information is secure and will never be shared</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="service-detail">
+                    <div class="service-icon-large">
+                        <i class="fas fa-address-book"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="service-features-grid">
+                            <div class="feature">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Email Us</h4>
+                                <p>twinstackdevelopers@gmail.com</p>
+                                <p><small>We reply within 24 hours</small></p>
+                                <a href="mailto:twinstackdevelopers@gmail.com" class="btn-primary" style="margin-top: 10px;">
+                                    <i class="fas fa-envelope"></i> Send Email
+                                </a>
+                            </div>
+                            
+                            <div class="feature">
+                                <i class="fas fa-phone"></i>
+                                <h4>Call Us</h4>
+                                <p>+260 973018429</p>
+                                <p><small>Mon-Fri, 9am-6pm CAT</small></p>
+                                <a href="tel:+260973018429" class="btn-primary" style="margin-top: 10px;">
+                                    <i class="fas fa-phone"></i> Call Now
+                                </a>
+                            </div>
+                            
+                            <div class="feature">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>Based in Zambia</h4>
+                                <p>Remote Development Team</p>
+                                <p>Serving clients worldwide</p>
+                                <p><small>Available globally</small></p>
+                                <button class="btn-primary schedule-btn" style="margin-top: 10px;">
+                                    <i class="fas fa-video"></i> Video Call
+                                </button>
+                            </div>
+                            
+                            <div class="feature">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h4>Book a Call</h4>
+                                <p>Schedule a free 30-minute consultation</p>
+                                <p><small>Meet with our team</small></p>
+                                <button class="btn-primary schedule-btn" style="margin-top: 10px;">
+                                    <i class="fas fa-calendar-check"></i> Schedule Now
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Response Message Area -->
+                        <div id="formResponse" style="display: none; margin-top: 30px; padding: 20px; border-radius: 8px; text-align: center;">
+                            <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                            <h4 id="responseTitle" style="margin: 10px 0;"></h4>
+                            <p id="responseMessage" style="margin: 0; font-size: 1rem;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="services-overview">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about working with us</p>
+            
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>How long does a typical project take?</h3>
+                    <p>Project timelines vary based on complexity. Typically: Websites take 2-4 weeks, Mobile Apps 6-12 weeks, and E-commerce stores 4-8 weeks. We provide detailed timelines during the discovery phase.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>What's your pricing structure?</h3>
+                    <p>We offer transparent, fixed-price quotes based on project requirements. Websites start at $1,500, Mobile Apps at $5,000, and E-commerce solutions at $3,000. All quotes include a detailed breakdown of costs.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Do you offer ongoing support?</h3>
+                    <p>Yes! We offer maintenance packages starting at $150/month. This includes hosting, security updates, bug fixes, and minor updates. We also offer hourly support for ad-hoc needs.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>What technologies do you work with?</h3>
+                    <p>We work with modern technologies including React, Vue.js, Node.js, Python, MongoDB, PostgreSQL, React Native, Flutter, WordPress, and more. We choose the best stack for each project.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Do you provide design services?</h3>
+                    <p>Absolutely! Our UI/UX design services are included in all development projects. We create custom designs that are both beautiful and functional, following user-centered design principles.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>What's your development process?</h3>
+                    <p>We follow a 4-step process: 1) Discovery & Planning, 2) Design & Prototyping, 3) Development & Testing, 4) Launch & Support. Each phase includes client collaboration and approval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's build something amazing together</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>twinstackdevelopers@gmail.com</p>
+                    <p><small>We reply within 24 hours</small></p>
+                    <a href="mailto:twinstackdevelopers@gmail.com" class="btn-primary">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+260 973018429</p>
+                    <p><small>Mon-Fri, 9am-6pm CAT</small></p>
+                    <a href="tel:+260973018429" class="btn-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Schedule a Call</h3>
+                    <p>Book a 30-minute consultation</p>
+                    <p><small>Free discovery call</small></p>
+                    <button class="btn-primary schedule-btn">
+                        <i class="fas fa-calendar-check"></i> Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TwinstackDevs</h4>
+                    <p>Building digital solutions that help businesses grow.</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class ="current-year">2024</span> Twinstack Developers. All rights reserved.</p>
+                <p>Professional web and mobile app development services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-button" id="chatButton">
+        <i class="fas fa-comment-dots"></i>
+        <span>Chat with us</span>
+    </div>
+
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-comment-dots"></i>
+                <span>Twinstack Developers</span>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message">
+                    <div class="message-avatar">TS</div>
+                    <div class="message-content">
+                        <p>Hello! 👋 Welcome to Twinstack Developers. How can we help you today?</p>
+                        <small>Just now</small>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-questions">
+                <button class="quick-question">Website Development</button>
+                <button class="quick-question">Mobile App</button>
+                <button class="quick-question">Pricing</button>
+                <button class="quick-question">Timeline</button>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chatInput">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/year-update.js"></script>
+    <script src="js/contact-emailjs.js"></script>
+</body>
+</html>

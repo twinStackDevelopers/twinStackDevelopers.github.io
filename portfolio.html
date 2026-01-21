@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - Twinstack Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span class="logo-highlight">Twin</span>stackDevs
+            </a>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="chat-btn">Start a Project</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Work Portfolio</h1>
+                <p>See how we've helped businesses transform their digital presence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="website">Websites</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="webapp">Web Apps</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="portfolio-items">
+                <!-- Cashcraft Loan Management -->
+                <div class="portfolio-item" data-category="webapp">
+                    <div class="portfolio-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('cashcraft-loan.jpg.jpeg'); background-size: cover; background-position: center;">
+                        <div class="portfolio-overlay">
+                            <h3>Loan Management System</h3>
+                            <p>Complete financial solution for loan processing</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Cashcraft Loan Management</h3>
+                        <p>Advanced loan management web application with automated approval workflows, payment tracking, and reporting dashboard.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- PeakPamper Salon -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('peakpamper-salon.jpg.jpeg'); background-size: cover; background-position: center;">
+                        <div class="portfolio-overlay">
+                            <h3>Salon Booking System</h3>
+                            <p>Modern salon website with online booking</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>PeakPamper Salon</h3>
+                        <p>Salon website with online booking, service catalog, staff profiles, and customer reviews.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>PostgreSQL</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                        </div>
+                        <a href="https://peakpamper.com/" class="portfolio-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Exalt Loans -->
+                <div class="portfolio-item" data-category="webapp">
+                    <div class="portfolio-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('exalt-loans.jpg.jpeg'); background-size: cover; background-position: center;">
+                        <div class="portfolio-overlay">
+                            <h3>Financial Platform</h3>
+                            <p>Loan management web application</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Exalt Loans Management</h3>
+                        <p>Comprehensive loan management web application with customer portal, document management, and analytics.</p>
+                        <div class="portfolio-tech">
+                            <span>Express.js</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>React</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- EliteFit Gym -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('elitefit-gym.jpg.jpeg'); background-size: cover; background-position: center;">
+                        <div class="portfolio-overlay">
+                            <h3>Gym Website</h3>
+                            <p>Responsive fitness website</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>EliteFit Gym</h3>
+                        <p>A responsive gym website designed to highlight workouts, nutrition, and results with class booking.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Express.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Node.js</span>
+                        </div>
+                        <a href="https://twinstackdevelopers.github.io/ts-port-folio-site/gym%20website/index.html" class="portfolio-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Velocity Motors -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('velocity-motors.jpg'); background-size: cover; background-position: center;">
+                        <div class="portfolio-overlay">
+                            <h3>Car Showroom</h3>
+                            <p>Vehicle listing and management</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Velocity Motors</h3>
+                        <p>A sleek car showroom website for vehicle listings, inventory management, and test drive scheduling.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Express.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Cloudinary</span>
+                        </div>
+                        <a href="https://twinstackdevelopers.github.io/ts-port-folio-site/showroom%20website%20-%20for%20testing/index.html" class="portfolio-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What our clients say about working with us</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Default rates dropped 35% with Twinstack's smart loan system. The platform pays for itself through better risk decisions."
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Changwe Mulimbika</h4>
+                        <p>CEO, Cashcraft Finance</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Twinstack created our salon's beautiful booking website that perfectly captures our brand's elegance. The seamless online reservation system has transformed how we connect with clients."
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Margaret Mbevya</h4>
+                        <p>Co-owner, PeakPamper Salon</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Our website works so smoothly thanks to Twinstack. It feels welcoming just like walking into our salon."
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Chabala Ngulukila</h4>
+                        <p>Co-owner, PeakPamper Salon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's create something amazing together</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">Start a Project</a>
+                <a href="services.html" class="btn-secondary">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TwinstackDevs</h4>
+                    <p>Building digital solutions that help businesses grow.</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2024</span> Twinstack Developers. All rights reserved.</p>
+                <p>Professional web and mobile app development services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-button" id="chatButton">
+        <i class="fas fa-comment-dots"></i>
+        <span>Chat with us</span>
+    </div>
+
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-comment-dots"></i>
+                <span>Twinstack Developers</span>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message">
+                    <div class="message-avatar">TS</div>
+                    <div class="message-content">
+                        <p>Hello! 👋 Welcome to Twinstack Developers. How can we help you today?</p>
+                        <small>Just now</small>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-questions">
+                <button class="quick-question">Website Development</button>
+                <button class="quick-question">Mobile App</button>
+                <button class="quick-question">Pricing</button>
+                <button class="quick-question">Timeline</button>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chatInput">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/portfolio-filter.js"></script>
+    <script src="js/year-update.js"></script>
+</body>
+</html>
