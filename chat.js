@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Chat responses
     const chatResponses = {
         'greeting': 'Hello! 👋 Welcome to Twinstack Developers. How can we help you today?',
-        'website': 'We offer custom website development starting at $1,500. Our websites are responsive, SEO-optimized, and fast-loading. Would you like to schedule a consultation?',
-        'mobile app': 'We develop both native (iOS/Android) and cross-platform mobile apps starting at $5,000. Tell us about your app idea and we\'ll provide a custom quote.',
-        'pricing': 'Our pricing depends on project requirements. Websites start at $1,500, mobile apps at $5,000, and e-commerce stores at $3,000. All prices are customizable based on features.',
+        'website': 'We offer custom website development . Our websites are responsive, SEO-optimized, and fast-loading. Would you like to schedule a consultation?',
+        'mobile app': 'We develop both native (iOS/Android) and cross-platform mobile apps . Tell us about your app idea and we\'ll provide a custom quote.',
+        'pricing': 'Our pricing depends on project requirements. Websites start as low as  K800 for personal portifolio websites, mobile apps at K5,000. All prices are customizable based on features.',
         'timeline': 'Typical project timelines: Websites 2-4 weeks, Mobile Apps 6-12 weeks, E-commerce 4-8 weeks. We provide detailed timelines during our discovery phase.',
-        'contact': 'You can reach us at contact@twinstackdevs.com or call +1 (555) 123-4567. We reply within 24 hours.',
+        'contact': 'You can reach us at twinstackdevelopers@gmail.com or call +260 973 018 429. We reply within 24 hours.',
         'process': 'Our process: 1) Discovery & Planning, 2) Design & Prototyping, 3) Development, 4) Testing & Launch. Each phase includes client collaboration.',
         'default': 'I\'m here to help! You can ask about our services, pricing, timeline, or contact information. What would you like to know?'
     };
@@ -188,4 +188,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 10000);
     }
+
 });
